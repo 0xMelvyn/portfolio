@@ -43,7 +43,7 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
+          <nav className='pt-10 flex justify-between'>
             <h1 className='text-xl font-burtons dark:text-white dark:hover:text-teal-500 hover:text-teal-500 hover:scale-110 transition duration-500'><a href="#contact">Contact me</a></h1>
             <ul className='flex items-center'>
               <li>
@@ -53,22 +53,22 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={handleMoonClick} className='cursor-pointer text-2xl hover:-rotate-90 transition duration-1000 dark:text-white'/>
             )}
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:from-cyan-400 hover:to-teal-400' href="#">Download CV</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:from-cyan-400 hover:to-teal-400' href="https://0xmelvyn.github.io/CV/static/media/cv.96d1a55b505891aa471d.pdf" target='#blank'>Download CV</a></li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
+          <div className='text-center pt-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Melvyn Hoarau</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer and designer.</h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200'>
               Freelancer providing services for programming and design content needs. Join me down below and let's get your idea to reality!
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
-            <a href="https://github.com/0xMelvyn?tab=repositories" target='#blank'><BsGithub className='hover:text-black dark:hover:text-white transition duration-500' /></a>
-            <a href="https://twitter.com/TheDevIsCooking" target='#blank'><BsTelegram className='hover:text-black dark:hover:text-white transition duration-500' /></a>
-            <a href=""><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+          <div className='text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400'>
+            <a href="https://github.com/0xMelvyn" target='#blank'><BsGithub className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+            <a href="https://t.me/MelvynHoarau" target='#blank'><BsTelegram className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+            <a href="https://www.messenger.com/t/100088349492050/"><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden my-10 md:h-96 md:w-96'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden my-10 md:h-96 md:w-96'>
             <Image className='hover:scale-110 transition duration-500' src={deved} layout="fill" objectFit="cover" />
           </div>
         </section>
