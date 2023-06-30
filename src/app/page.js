@@ -26,7 +26,6 @@ export default function Home() {
     
         emailjs.sendForm('service_ok34pd9', 'template_yr9yz4q', form.current, 'pGbqVmTvTEyeeMMts')
         .then((result) => {
-            alert("Email sent !");
         }, (error) => {
             console.log(error.text);
         });
@@ -49,11 +48,11 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={handleMoonClick} className='cursor-pointer text-2xl hover:-rotate-90 transition duration-1000 dark:text-white'/>
             )}
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:from-cyan-400 hover:to-teal-400' href="https://0xmelvyn.github.io/CV/static/media/cv.96d1a55b505891aa471d.pdf" target='#blank'>Download CV</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:from-cyan-400 hover:to-teal-400' href="https://0xmelvyn.github.io/CV/static/media/cv.96d1a55b505891aa471d.pdf" target='#blank'>CV</a></li>
             </ul>
           </nav>
           <div className='text-center pt-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Melvyn Hoarau</h2>
+            <h2 className='text-4xl lg:text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Melvyn Hoarau</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer and designer.</h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200'>
               Freelancer providing services for programming and design content needs. Join me down below and let's get your idea to reality!
@@ -73,13 +72,13 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 mt- dark:text-white'>Services I Offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Since the beginning of my journey as a freelance designer and developer, I've done remote work for
-              <span className='text-teal-500'> agencies </span>
-              consulted for <span className='text-teal-500'>starups </span>
-              and collabored with talanted people to create digital products for both business and consumer use.
+              I am a
+              <span className='text-teal-500'> certified </span>
+              junior developer and designer. I develop <span className='text-teal-500'>full stack </span>
+              website, with a preference for front-end. Minimalist and flat-design are my graphist specialities.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              I offer from a wide range of services, including brand design, programming and teaching.
+              It would be an honnor to help you create the content you need to boost your activity!
             </p>
           </div>
           <div className='lg:flex gap-10'>
@@ -122,13 +121,11 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Since the beginning of my journey as a freelance designer and developer, I've done remote work for
-              <span className='text-teal-500'> agencies </span>
-              consulted for <span className='text-teal-500'>starups </span>
-              and collabored with talanted people to create digital products for both business and consumer use.
+              Take a look at some of my previous <span className='text-teal-500'>project </span> to have a glimpse of what I am able to do.
+              Feel free to check the <span className='text-teal-500'> source code </span> on my Github, every thing is public.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              I offer from a wide range of services, including brand design, programming and teaching.
+              There are demo website, they are not fully fonctionnal!
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -144,15 +141,13 @@ export default function Home() {
               <div>
               <h3 className='text-3xl py-1 mt- dark:text-white'>Contact Me</h3>
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              Feel free to write me a mail with this form, if you have any
-              <span className='text-teal-500'> question </span>
-              or to <span className='text-teal-500'>contact </span>
-              me. I'll answer as fast as I can !
-            </p>
+                Do not hesitate to write me a mail,<span className='text-teal-500'> contact </span> me on my differents social network or use this incredible form if you have any
+              <span className='text-teal-500'> question </span> or if you need further informations.
+              </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              You can also add me on my social network.
+            I'll answer as fast as I can !
             </p>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col gap-10 py-5 lg:flex-row lg:flex-wrap">
               <div className='flex flex-col text-center dark:text-white basis-1/8 flex-1 gap-10 leading-7'>
                     <article className="flex flex-col shadow-lg rounded-lg py-5 hover:scale-110 transition duration-500 dark:shadow-2xl">
                         <BsEnvelopeFill className='mx-auto text-3xl text-red-600'/>
