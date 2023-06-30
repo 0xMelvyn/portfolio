@@ -1,16 +1,12 @@
 'use client'
 import Image from 'next/image'
-import {BsFillMoonStarsFill, BsFillSunFill, BsGithub, BsTelegram, BsMessenger} from 'react-icons/bs'
+import {BsFillMoonStarsFill, BsFillSunFill,BsEnvelopeFill, BsGithub, BsTelegram, BsMessenger} from 'react-icons/bs'
 import deved from "../../public/dev-ed-wave.png"
 import design from "../../public/design.png"
 import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
 import web1 from "../../public/web1.png"
 import web2 from "../../public/web2.png"
-import web3 from "../../public/web3.png"
-import web4 from "../../public/web4.png"
-import web5 from "../../public/web5.png"
-import web6 from "../../public/web6.png"
 import { useState } from "react"
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -65,7 +61,7 @@ export default function Home() {
           </div>
           <div className='text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400'>
             <a href="https://github.com/0xMelvyn" target='#blank'><BsGithub className='hover:text-black dark:hover:text-white transition duration-500' /></a>
-            <a href="https://t.me/MelvynHoarau" target='#blank'><BsTelegram className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+            <a href="mailto:melvynhoarau@icloud.com" target='#blank'><BsEnvelopeFill className='hover:text-black dark:hover:text-white transition duration-500' /></a>
             <a href="https://www.messenger.com/t/100088349492050/"><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden my-10 md:h-96 md:w-96'>
@@ -73,7 +69,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="services">
           <div>
             <h3 className='text-3xl py-1 mt- dark:text-white'>Services I Offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
@@ -87,7 +83,7 @@ export default function Home() {
             </p>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={design} width={100} height={100} flex-1/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Beautiful Designs</h3>
               <p className='py-2 dark:text-white'>
@@ -98,7 +94,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-200'>Canva</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>A.I</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={code} width={100} height={100} flex-1/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Clean Code</h3>
               <p className='py-2 dark:text-white'>
@@ -109,7 +105,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-200'>Tailwind/React/Next</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>PHP/SQL</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={consulting} width={100} height={100} flex-1/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>Always Available</h3>
               <p className='py-2 dark:text-white'>
@@ -122,7 +118,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className='min-h-screen' id="portfolio">
           <div>
             <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
@@ -143,6 +139,7 @@ export default function Home() {
                 <a href="https://php-blog-portfolio.000webhostapp.com/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web2}/></a>
               </div>
             </div>
+            </section>
             <section id="contact">
               <div>
               <h3 className='text-3xl py-1 mt- dark:text-white'>Contact Me</h3>
@@ -157,37 +154,58 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div className='flex flex-col text-center dark:text-white basis-1/8 flex-1 gap-10 leading-7'>
-                    <article className="flex flex-col bg-teal-600 rounded-lg py-5">
-                        <BsGithub className='mx-auto text-3xl text-white'/>
-                        <h4 className='text-white'>Email</h4>
-                        <h5 className='text-sm text-gray-300'>melvynhoarau@icloud.com</h5>
+                    <article className="flex flex-col shadow-lg rounded-lg py-5 hover:scale-110 transition duration-500 dark:shadow-2xl">
+                        <BsEnvelopeFill className='mx-auto text-3xl text-red-600'/>
+                        <h4>Email</h4>
+                        <h5 className='text-sm text-teal-500'>melvynhoarau@icloud.com</h5>
                         <a href="mailto:melvynhoarau@icloud.com" target='_blank'>Send a message</a>
                     </article>
-                    <article className="flex flex-col bg-teal-600 rounded-lg py-5">
-                        <BsMessenger className='mx-auto text-3xl text-white'/>
-                        <h4 className='text-white'>Messenger</h4>
-                        <h5 className='text-sm text-gray-300'>Melvyn Hoarau</h5>
+                    <article className="flex flex-col shadow-lg rounded-lg py-5 hover:scale-110 transition duration-500 dark:shadow-2xl">
+                        <BsMessenger className='mx-auto text-3xl text-purple-600'/>
+                        <h4>Messenger</h4>
+                        <h5 className='text-sm text-teal-500'>Melvyn Hoarau</h5>
                         <a href="https://www.messenger.com/t/100088349492050/" target='_blank'>Send a message</a>
                     </article>
-                    <article className="flex flex-col bg-teal-600 rounded-lg py-5">
-                        <BsTelegram className='mx-auto text-3xl text-white'/>
-                        <h4 className='text-white'>Telegram</h4>
-                        <h5 className='text-sm text-gray-300'>@MelvynHoarau</h5>
+                    <article className="flex flex-col shadow-lg rounded-lg py-5 hover:scale-110 transition duration-500 dark:shadow-2xl">
+                        <BsTelegram className='mx-auto text-3xl text-blue-400'/>
+                        <h4>Telegram</h4>
+                        <h5 className='text-sm text-teal-500'>@MelvynHoarau</h5>
                         <a href="https://t.me/MelvynHoarau" target='_blank'>Send a message</a>
                     </article>
               </div>
               <div className='flex flex-col text-center basis-1/3 flex-1'>
                   <form className='flex flex-col gap-5 py-5' ref={form} onSubmit={sendEmail}>
-                      <input className='shadow-lg border-2 border-solid border-teal-500 bg-transparent rounded-lg p-5 dark:text-white' type="text" name='name' placeholder='Your full Name' required/>
-                      <input className='shadow-lg border-2 border-solid border-teal-500 bg-transparent rounded-lg p-5 dark:text-white' type="email" name='email' placeholder='Your Email' required/>
-                      <textarea className='shadow-lg border-2 border-solid border-teal-500 bg-transparent rounded-lg p-5 dark:text-white' name="message" rows="7" placeholder='Your Message' required></textarea>
-                      <button className='shadow-lg border-2 border-solid border-teal-500 bg-teal-400 rounded-lg p-5' type='submit'>Send Message</button>
+                      <input className='shadow-lg border-2 border-solid border-gray-200 bg-transparent rounded-lg p-5 dark:text-white' type="text" name='name' placeholder='Your full Name' required/>
+                      <input className='shadow-lg border-2 border-solid border-gray-200 bg-transparent rounded-lg p-5 dark:text-white' type="email" name='email' placeholder='Your Email' required/>
+                      <textarea className='shadow-lg border-2 border-solid border-gray-200 bg-transparent rounded-lg p-5 dark:text-white' name="message" rows="7" placeholder='Your Message' required></textarea>
+                      <button className='shadow-lg bg-teal-500 rounded-lg p-5 hover:bg-teal-400 transition duration-500' type='submit'>Send Message</button>
                   </form>
               </div>
               </div>
             </div>
             </section>
-        </section>
+        <footer className='absolute left-0 bg-teal-600 text-center text-gray-700 w-full'>
+          <div className='my-5'>
+            <a className='text-2xl hover:text-black transition duration-500' href="#">MELVYN</a>
+
+            <ul className='flex justify-center my-5 gap-5'>
+                <li><a className='hover:text-black transition duration-500' href="#">Home</a></li>
+                <li><a className='hover:text-black transition duration-500' href="#services">Services</a></li>
+                <li><a className='hover:text-black transition duration-500' href="#portfolio">Portfolio</a></li>
+                <li><a className='hover:text-black transition duration-500' href="#contact">Contact</a></li>
+            </ul>
+
+            <div className='flex justify-center text-2xl my-5 gap-5'>
+                <a className='hover:text-black transition duration-500' href="https://www.messenger.com/t/100088349492050/" target='_blank'><BsMessenger/></a>
+                <a className='hover:text-black transition duration-500' href="https://t.me/MelvynHoarau" target='_blank'><BsTelegram/></a>
+                <a className='hover:text-black transition duration-500' href="mailto:melvynhoarau@icloud.com" target='_blank'><BsEnvelopeFill/></a>
+            </div>
+
+            <div>
+                <small>&copy; MELVYN. All right reserved.</small>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   )
