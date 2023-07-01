@@ -157,8 +157,8 @@ export default function Home() {
               <div>
               <h3 className='text-3xl py-1 mt- dark:text-white'>Contact Me</h3>
               <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-                Do not hesitate to write me a mail,<span className='text-teal-500'> contact </span> me on my differents social network or use this incredible form if you have any
-              <span className='text-teal-500'> question </span> or if you need further informations.
+                Do not hesitate to write me an email,<span className='text-teal-500'> contact </span> me on my different social networks or use this incredible form if you have any
+              <span className='text-teal-500'> questions </span> or if you need further information.
               </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
             I'll answer as fast as I can !
