@@ -10,9 +10,14 @@ import web2 from "../../public/web2.png"
 import { useState } from "react"
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Home() {
+
+  const notify = () => toast("Wow so easy !");
+
   const [darkMode, setDarkMode] = useState(false);
 
   const handleMoonClick = () => {
@@ -26,6 +31,16 @@ export default function Home() {
     
         emailjs.sendForm('service_ok34pd9', 'template_yr9yz4q', form.current, 'pGbqVmTvTEyeeMMts')
         .then((result) => {
+          toast.success('Email sent!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: darkMode ? "dark" : "light",
+            });
         }, (error) => {
             console.log(error.text);
         });
@@ -36,6 +51,7 @@ export default function Home() {
   
   return (
     <div className={darkMode ? "dark" : ""}>
+      <ToastContainer />
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='pt-10 flex justify-between'>
@@ -102,7 +118,7 @@ export default function Home() {
               <h4 className='py-4 text-teal-600'>Stack I know</h4>
               <p className='text-gray-800 py-1 dark:text-gray-200'>HTML/CSS/JS</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>Tailwind/React/Next</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>PHP/SQL</p>
+              <p className='text-gray-800 py-1 dark:text-gray-200'>PHP/MySQL</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={consulting} width={100} height={100} flex-1/>
