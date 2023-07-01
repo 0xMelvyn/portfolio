@@ -91,10 +91,10 @@ export default function Home() {
               I am a
               <span className='text-teal-500'> certified </span>
               junior developer and designer. I develop <span className='text-teal-500'>full stack </span>
-              website, with a preference for front-end. Minimalist and flat-design are my graphist specialities.
+              website, with a preference for front-end. Minimalist and flat-design are my graphic specialities.
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-              It would be an honnor to help you create the content you need to boost your activity!
+              It would be an honor to help you create the content you need to boost your activity!
             </p>
           </div>
           <div className='lg:flex gap-10'>
@@ -107,7 +107,7 @@ export default function Home() {
               <h4 className='py-4 text-teal-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1 dark:text-gray-200'>Gimp</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>Canva</p>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>A.I</p>
+              <p className='text-gray-800 py-1 dark:text-gray-200'>AI</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={code} width={100} height={100} flex-1/>
