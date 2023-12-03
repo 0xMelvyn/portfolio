@@ -7,6 +7,7 @@ import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
 import web1 from "../../public/web1.png"
 import web2 from "../../public/web2.png"
+import web3 from "../../public/web3.png"
 import { useState } from "react"
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -150,6 +151,9 @@ export default function Home() {
               </div>
               <div className="basis-1/3 flex-1 ">
                 <a href="https://php-blog-portfolio.000webhostapp.com/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web2}/></a>
+              </div>
+              <div className="basis-1/3 flex-1 ">
+                <a href="https://estate-exemple-by-melvyn.vercel.app/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web3}/></a>
               </div>
             </div>
             </section>
