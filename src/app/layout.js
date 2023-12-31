@@ -4,13 +4,13 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Melvyn's Portfolio",
-  description: 'My portfolio',
+  title: "CV de Melvyn Hoarau",
+  description: 'Vous cherchez un site internet pour votre entreprises ? Vous êtes au bon endroit !',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html className='bg-gray-900' lang="en">
+    <html className='bg-gray-900' lang="fr">
       <body className={inter.className}>{children}</body>
     </html>
   )
