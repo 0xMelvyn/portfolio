@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import {BsFillMoonStarsFill, BsFillSunFill,BsEnvelopeFill, BsGithub, BsTelegram, BsMessenger} from 'react-icons/bs'
+import {BsFillMoonStarsFill, BsFillSunFill,BsEnvelopeFill, BsGithub, BsMessenger, BsLinkedin} from 'react-icons/bs'
 import deved from "../../public/dev-ed-wave.png"
 import design from "../../public/design.png"
 import code from "../../public/code.png"
@@ -92,8 +92,8 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={handleMoonClick} className='cursor-pointer text-2xl hover:-rotate-90 transition duration-1000 dark:text-white'/>
             )}
               </li>
-              <li className='mx-5'>
-                <select onChange={handleLangChange}>
+              <li className='ml-1'>
+                <select className='dark:bg-gray-900 dark:text-white' onChange={handleLangChange}>
                 <option value="fr">FR</option>
                 <option value="en">EN</option>
                 </select>
@@ -111,8 +111,8 @@ export default function Home() {
           </div>
           <div className='text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400'>
             <a href="https://github.com/0xMelvyn" target='#blank'><BsGithub className='hover:text-black dark:hover:text-white transition duration-500' /></a>
-            <a href="mailto:melvynhoarau@icloud.com" target='#blank'><BsEnvelopeFill className='hover:text-black dark:hover:text-white transition duration-500' /></a>
-            <a href="https://www.messenger.com/t/100088349492050/"><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+            <a href="https://www.linkedin.com/in/melvyn-hoarau" target='#blank'><BsLinkedin className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+            <a href="https://www.messenger.com/t/100088349492050/" target='#blank'><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden my-10 md:h-96 md:w-96'>
             <Image className='hover:scale-110 transition duration-500' src={deved} layout="fill" objectFit="cover" />
@@ -130,7 +130,7 @@ export default function Home() {
             </p>
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
+            <div className='text-center shadow-lg dark:shadow-black p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={design} width={100} height={100} flex-1/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>{ t('services.cards.design.title')}</h3>
               <p className='py-2 dark:text-white'>
@@ -141,7 +141,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-200'>Canva</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>AI</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
+            <div className='text-center shadow-lg dark:shadow-black p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={code} width={100} height={100} flex-1/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>{ t('services.cards.dev.title')}</h3>
               <p className='py-2 dark:text-white'>
@@ -152,14 +152,14 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-gray-200'>Tailwind/React/Next</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>PHP/MySQL</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
+            <div className='text-center shadow-lg dark:shadow-black p-10 rounded-xl my-10 flex-1 hover:scale-110 transition dark:shadow-2xl'>
               <Image className='mx-auto' src={consulting} width={100} height={100} flex-1/>
               <h3 className='text-lg font-medium pt-8 pb-2 dark:text-white'>{ t('services.cards.contact.title')}</h3>
               <p className='py-2 dark:text-white'>
               { t('services.cards.contact.description')}
               </p>
               <h4 className='py-4 text-teal-600'>{ t('services.cards.contact.subtitle')}</h4>
-              <p className='text-gray-800 py-1 dark:text-gray-200'>Telegram</p>
+              <p className='text-gray-800 py-1 dark:text-gray-200'>LinkedIn</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>Messenger</p>
               <p className='text-gray-800 py-1 dark:text-gray-200'>Email</p>
             </div>
@@ -208,10 +208,10 @@ export default function Home() {
                         <a href="https://www.messenger.com/t/100088349492050/" target='_blank'>{ t('social')}</a>
                     </article>
                     <article className="flex flex-col shadow-lg rounded-lg py-5 hover:scale-110 transition duration-500 dark:shadow-2xl">
-                        <BsTelegram className='mx-auto text-3xl text-blue-400'/>
-                        <h4>Telegram</h4>
-                        <h5 className='text-sm text-teal-500'>@MelvynHoarau</h5>
-                        <a href="https://t.me/MelvynHoarau" target='_blank'>{ t('social')}</a>
+                        <BsLinkedin className='mx-auto text-3xl text-blue-400'/>
+                        <h4>LinkedIn</h4>
+                        <h5 className='text-sm text-teal-500'>Melvyn Hoarau</h5>
+                        <a href="https://www.linkedin.com/in/melvyn-hoarau" target='_blank'>{ t('social')}</a>
                     </article>
               </div>
               <div className='flex flex-col text-center basis-1/3 flex-1'>
@@ -219,31 +219,32 @@ export default function Home() {
                       <input className='shadow-lg border-2 border-solid border-gray-200 bg-transparent rounded-lg p-5 dark:text-white' type="text" name='name' placeholder={ t('form.name')} required/>
                       <input className='shadow-lg border-2 border-solid border-gray-200 bg-transparent rounded-lg p-5 dark:text-white' type="email" name='email' placeholder={ t('form.email')} required/>
                       <textarea className='shadow-lg border-2 border-solid border-gray-200 bg-transparent rounded-lg p-5 dark:text-white' name="message" rows="7" placeholder={ t('form.message')} required></textarea>
-                      <button className='shadow-lg bg-teal-500 rounded-lg p-5 hover:bg-teal-400 transition duration-500' type='submit'>{ t('send')}</button>
+                      <button className='shadow-lg bg-teal-500 rounded-lg p-5 hover:bg-teal-400 dark:text-white transition duration-500' type='submit'>{ t('send')}</button>
                   </form>
               </div>
               </div>
             </div>
             </section>
-        <footer className='absolute left-0 bg-teal-600 text-center text-gray-700 w-full'>
+        <footer className='absolute left-0 bg-white dark:bg-gray-900 text-center text-gray-700 w-full'>
+          <hr />
           <div className='my-5'>
-            <a className='text-2xl hover:text-black transition duration-500' href="#">MELVYN</a>
+            <a className='text-2xl hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="#">MELVYN</a>
 
             <ul className='flex justify-center my-5 gap-5'>
-                <li><a className='hover:text-black transition duration-500' href="#">{ t('home')}</a></li>
-                <li><a className='hover:text-black transition duration-500' href="#services">Services</a></li>
-                <li><a className='hover:text-black transition duration-500' href="#portfolio">{ t('portefolio')}</a></li>
-                <li><a className='hover:text-black transition duration-500' href="#contact">Contact</a></li>
+                <li><a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="#">{ t('home')}</a></li>
+                <li><a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="#services">Services</a></li>
+                <li><a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="#portfolio">{ t('portefolio')}</a></li>
+                <li><a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="#contact">Contact</a></li>
             </ul>
 
             <div className='flex justify-center text-2xl my-5 gap-5'>
-                <a className='hover:text-black transition duration-500' href="https://www.messenger.com/t/100088349492050/" target='_blank'><BsMessenger/></a>
-                <a className='hover:text-black transition duration-500' href="https://t.me/MelvynHoarau" target='_blank'><BsTelegram/></a>
-                <a className='hover:text-black transition duration-500' href="mailto:melvynhoarau@icloud.com" target='_blank'><BsEnvelopeFill/></a>
+                <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="https://www.messenger.com/t/100088349492050/" target='_blank'><BsMessenger/></a>
+                <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="https://www.linkedin.com/in/melvyn-hoarau" target='_blank'><BsLinkedin/></a>
+                <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="mailto:melvynhoarau@icloud.com" target='_blank'><BsEnvelopeFill/></a>
             </div>
 
             <div>
-                <small>&copy; { t('right')}</small>
+                <small className='dark:text-gray-600'>&copy; { t('right')}</small>
             </div>
           </div>
         </footer>

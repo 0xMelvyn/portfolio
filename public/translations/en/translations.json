@@ -6,7 +6,7 @@
     },
     "services": {
         "title": "Services I Offer",
-        "description1": "I have a **web developer certification** and create **comprehensive** websites.",
+        "description1": "I have a **web developer certification** and create **turnkey** websites.",
         "description2": "It would be an honor to help you create the website you need to boost your business!",
         "cards": {
             "design": {
@@ -21,15 +21,15 @@
             },
             "contact": {
                 "title": "Always Available",
-                "description": "No worries if you need changes or run into issues; we'll stay in touch.",
+                "description": "No worries if you need changes or run into issues, we'll stay in touch.",
                 "subtitle": "My Channels"
             }
         }
     },
     "portfolio": {
         "title": "My Portfolio",
-        "description1": "Take a look at some of my **previous projects** to get an idea of what's possible. Feel free to check out the **source code** on my Github; it's all public.",
-        "description2": "These are demonstration sites; they're not fully functional!"
+        "description1": "Take a look at some of my **previous projects** to get an idea of what's possible. Feel free to check out the **source code** on my Github, it's all public.",
+        "description2": "These are demonstration sites, they're not fully functional!"
     },
     "form": {
         "title": "Contact Me",
@@ -43,5 +43,5 @@
     "send": "Send Message",
     "home": "Home",
     "portefolio": "Portfolio",
-    "right": "MELVYN. All rights reserved."
+    "right": "Melvyn Hoarau. All rights reserved."
 }
