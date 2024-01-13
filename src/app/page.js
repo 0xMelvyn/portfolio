@@ -112,7 +112,7 @@ export default function Home() {
           <div className='text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400'>
             <a href="https://github.com/0xMelvyn" target='#blank'><BsGithub className='hover:text-black dark:hover:text-white transition duration-500' /></a>
             <a href="https://www.linkedin.com/in/melvyn-hoarau" target='#blank'><BsLinkedin className='hover:text-black dark:hover:text-white transition duration-500' /></a>
-            <a href="https://www.messenger.com/t/100088349492050/" target='#blank'><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
+            <a href="https://www.messenger.com/t/210061615523190/" target='#blank'><BsMessenger className='hover:text-black dark:hover:text-white transition duration-500' /></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden my-10 md:h-96 md:w-96'>
             <Image className='hover:scale-110 transition duration-500' src={deved} layout="fill" objectFit="cover" />
@@ -205,7 +205,7 @@ export default function Home() {
                         <BsMessenger className='mx-auto text-3xl text-purple-600'/>
                         <h4>Messenger</h4>
                         <h5 className='text-sm text-teal-500'>Melvyn Hoarau</h5>
-                        <a href="https://www.messenger.com/t/100088349492050/" target='_blank'>{ t('social')}</a>
+                        <a href="https://www.messenger.com/t/210061615523190/" target='_blank'>{ t('social')}</a>
                     </article>
                     <article className="flex flex-col shadow-lg rounded-lg py-5 hover:scale-110 transition duration-500 dark:shadow-2xl">
                         <BsLinkedin className='mx-auto text-3xl text-blue-400'/>
@@ -238,7 +238,7 @@ export default function Home() {
             </ul>
 
             <div className='flex justify-center text-2xl my-5 gap-5'>
-                <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="https://www.messenger.com/t/100088349492050/" target='_blank'><BsMessenger/></a>
+                <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="https://www.messenger.com/t/210061615523190/" target='_blank'><BsMessenger/></a>
                 <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="https://www.linkedin.com/in/melvyn-hoarau" target='_blank'><BsLinkedin/></a>
                 <a className='hover:text-black dark:text-gray-400 dark:hover:text-white transition duration-500' href="mailto:melvynhoarau@icloud.com" target='_blank'><BsEnvelopeFill/></a>
             </div>
