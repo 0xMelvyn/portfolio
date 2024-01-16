@@ -6,12 +6,12 @@
     },
     "services": {
         "title": "Les services que je propose",
-        "description1": "J'ai une **certification** de développeur web, je créer des sites web **clé en main**.",
-        "description2": "Ce cerait un honneur de vous aider à créer le site dont avez besoin pour booster votre activité !",
+        "description1": "J'ai une **certification** de développeur web, je crée des sites web **clés en mains**.",
+        "description2": "Ce serait un honneur de vous aider à créer le site dont vous avez besoin pour booster votre activité !",
         "cards": {
             "design": {
                 "title": "Design soigné",
-                "description": "Des designs modernes et esthetiques, adaptés à vos goûts.",
+                "description": "Des designs modernes et esthétiques, adaptés à vos goûts.",
                 "subtitle": "Outils utilisés"
             },
             "dev": {
@@ -21,19 +21,19 @@
             },
             "contact": {
                 "title": "Toujours disponible",
-                "description": "Pas d'inquiètude si vous souhaitez des modifications ou en cas de pepin, nous restons en contact.",
+                "description": "Pas d'inquiètude si vous souhaitez des modifications ou en cas de pépin, nous restons en contact.",
                 "subtitle": "Mes canaux"
             }
         }},
     "portfolio": {
-        "title": "Mon portefolio",
-        "description1": "Jetez un oeil à quelques uns de mes précedent **projet** pour avoir un aperçu de ce qu'il est possible de faire. N'hésitez pas à regarder le **code source** sur mon Github, tout est publique.",
+        "title": "Mon portfolio",
+        "description1": "Jetez un oeil à quelques uns de mes précedents **projets** pour avoir un aperçu de ce qu'il est possible de faire. N'hésitez pas à regarder le **code source** sur mon Github, tout est public.",
         "description2": "Ce sont des sites de démonstration, ils ne sont pas complètement fonctionnels !"
     },
     "form": {
         "title": "Contactez-moi",
-        "description1": "N'hésitez pas à m'écrire un email, me **contacter** sur mes differents réseaux sociaux ou utiliser ce formulaire si vos avez la moindre **question** ou si vous voulez plus d'informations.",
-        "description2": "Je répondrais le plus rapidement possible !",
+        "description1": "N'hésitez pas à m'écrire un email, me **contacter** sur mes différents réseaux sociaux ou utiliser ce formulaire si vous avez la moindre **question** ou si vous voulez plus d'informations.",
+        "description2": "Je répondrai le plus rapidement possible !",
         "name": "Votre Nom complet",
         "email": "Votre adresse Email",
         "message": "Votre message"
@@ -41,7 +41,7 @@
     "social": "Envoyer un message",
     "send": "Envoyer le message",
     "home": "Accueil",
-    "portefolio": "Portefolio",
+    "portefolio": "Portfolio",
     "right": "Melvyn Hoarau. Tous droits réservés."
 
 }
