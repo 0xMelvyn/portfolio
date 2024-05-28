@@ -6,6 +6,7 @@ import design from "../../public/design.png"
 import code from "../../public/code.png"
 import consulting from "../../public/consulting.png"
 import web1 from "../../public/web1.png"
+import web2 from "../../public/web2.png"
 import web3 from "../../public/web3.png"
 import { useState } from "react"
 import { useRef } from 'react';
@@ -176,11 +177,14 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="basis-1/3 flex-1 ">
+              <div className="basis-1/3 flex-1 shadow-lg dark:shadow-black">
                 <a href="https://estate-exemple-by-melvyn.vercel.app/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web3}/></a>
               </div>
-              <div className="basis-1/3 flex-1 ">
+              <div className="basis-1/3 flex-1 shadow-lg dark:shadow-black">
                 <a href="https://0xmelvyn.github.io/ecommerce/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web1}/></a>
+              </div>
+              <div className="basis-1/3 flex-1 shadow-lg dark:shadow-black">
+                <a href="https://0xmelvyn.github.io/ecommerce/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web2}/></a>
               </div>
             </div>
             </section>
