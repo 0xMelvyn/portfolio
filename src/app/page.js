@@ -184,7 +184,7 @@ export default function Home() {
                 <a href="https://0xmelvyn.github.io/ecommerce/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web1}/></a>
               </div>
               <div className="basis-1/3 flex-1 shadow-lg dark:shadow-black">
-                <a href="https://0xmelvyn.github.io/ecommerce/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web2}/></a>
+                <a href="https://estate-exemple-by-melvyn.vercel.app/" target='#blank'><Image className="rounded-lg object-cover hover:scale-110 transition duration-500" width={"100%"} height={"100%"} layout="responsive" src={web2}/></a>
               </div>
             </div>
             </section>
